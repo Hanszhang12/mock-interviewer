@@ -87,7 +87,7 @@ async def stream_claude(session_id: str, user_message: str) -> AsyncGenerator[st
     full_response = ""
 
     async with client.messages.stream(
-        model="claude-sonnet-4-6",
+        model="claude-haiku-4-5-20251001",
         max_tokens=1024,
         system=system_prompt,
         messages=session["messages"],
